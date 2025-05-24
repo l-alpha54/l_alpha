@@ -168,7 +168,7 @@ p#resultat {
     100% {opacity: 0.6;}
 }
 
-@media only screen and (min-resolution: 460dpi) {
+@media only screen and (min-resolution: 72dpi) {
     * {
         font-size: 30px;
     }
