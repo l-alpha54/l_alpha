@@ -174,7 +174,7 @@ p#resultat {
     }
 
     div.contenu {
-        width: 90%;
+        width: 50%;
         min-width: 350px;
         padding: 30px 20px;
     }
