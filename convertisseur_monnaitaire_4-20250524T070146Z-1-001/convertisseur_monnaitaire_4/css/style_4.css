@@ -170,7 +170,7 @@ p#resultat {
 
 @media only screen and (max-width: 768px) {
     * {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     div.contenu {
@@ -207,6 +207,7 @@ p#resultat {
 
     .titre {
         min-width: unset;
+        text-align: center;
         width: 90%;
         max-width: 500px;
     }
