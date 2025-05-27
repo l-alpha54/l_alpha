@@ -9,7 +9,7 @@ async function getSaissieUtilisateur(montant=0, devise_originaire="", devise_sou
             return;
         }
         
-        if (montant > 0) {
+        if (montant < 0) {
             document.getElementById('resultat').innerHTML = "Valeur non autorisée";
             return;
         }
