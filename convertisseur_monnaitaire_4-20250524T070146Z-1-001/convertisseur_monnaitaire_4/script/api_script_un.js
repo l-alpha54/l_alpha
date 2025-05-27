@@ -8,6 +8,7 @@ async function getSaissieUtilisateur(montant=0, devise_originaire="", devise_sou
             alert("Veuillez remplir tous les champs.");
             return;
         }
+        
         if (montant > 0) {
             document.getElementById('resultat').innerHTML = "Valeur non autorisée";
             return;
