@@ -1,5 +1,5 @@
 async function getSaissieUtilisateur(montant=0, devise_originaire="", devise_souhaitee="") {
-    if (devise_originaire =="" && devise_souhaitee == "" && montant == 0) {
+    if (devise_originaire === "" && devise_souhaitee === "" && montant === 0) {
         var montant = parseFloat(document.getElementById('montant').value);
         var devise_originaire = document.getElementById('deviseOriginaire').value;
         var devise_souhaitee = document.getElementById('deviseSouhaitee').value;
@@ -20,7 +20,7 @@ async function getSaissieUtilisateur(montant=0, devise_originaire="", devise_sou
         .then(data => {
             const rates = data.rates;
 
-    if (devise_originaire == 'USD') {
+    if (devise_originaire === 'USD') {
         let DS = rates[devise_souhaitee]
         let new_montant = montant*DS;
         new_montant = new_montant.toFixed(3) + ` ${devise_souhaitee}`;
