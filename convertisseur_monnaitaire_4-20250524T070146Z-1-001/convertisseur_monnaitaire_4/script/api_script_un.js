@@ -4,7 +4,7 @@ async function getSaissieUtilisateur(montant=0, devise_originaire="", devise_sou
         var devise_originaire = document.getElementById('deviseOriginaire').value;
         var devise_souhaitee = document.getElementById('deviseSouhaitee').value;
 
-        if (!montant || !devise_originaire || !devise_souhaitee) {
+        if (!montant || montant < 0 || !devise_originaire || !devise_souhaitee) {
             alert("Veuillez remplir tous les champs.");
             return;
         }
